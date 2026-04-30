@@ -13,7 +13,7 @@ app.get("/contato", function(req,res){
     res.send("<h1>Entre em Contato</h1>");
 });
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, function(){
     console.log("Servidor rodando na porta " + PORT);
